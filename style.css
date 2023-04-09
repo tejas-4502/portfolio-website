@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,600&family=Source+Code+Pro:ital@0;1&display=swap');
+
+
+
+
+*{
+    background-color: thistle;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+
+
+
+ /* social media styling */
+
+
+  .social body {
+    background: #131315;
+  }
+  
+  .socialmedia a {
+    text-decoration: none;
+  }
+  
+  .socialmedia ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 0;
+  }
+  
+  .socialmedia ul div {
+    width: 40px;
+    height: 5px;
+    background-color: #9581f4;
+    margin: auto;
+  }
+  
+  .socialmedia ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    margin: 0 20px;
+  }
+  
+  .socialmedia ul li span {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: rgb(69, 63, 63);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px !important;
+    transition: 1.5s ease-out;
+  }
+  
+  .socialmedia ul li:hover span {
+    transition: 0.3s;
+  }
+  
+  .socialmedia ul li:nth-child(2):hover span {
+    background: #2c3456 !important;
+  }
+  
+  .socialmedia ul li:nth-child(3):hover span {
+    background: #6a9aee !important;
+  }
+  
+  .socialmedia ul li:nth-child(4):hover span {
+    background: #cc296c !important;
+  }
+  
+  .socialmedia ul li:nth-child(5):hover span {
+    background: #600f69 !important;
+  }
+  
+
+
+
+/* services styling   */
+
+
+.wrapper {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.wrapper h1 {
+    position: relative;
+    color: #333;
+    font-size: 4em;
+    letter-spacing: 5px;
+    border-bottom: 16px solid #333;
+    line-height: 1.4;
+    font-family: consolas;
+    text-transform: uppercase;
+  }
+.wrapper h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: cadetblue;
+    border-bottom: 16px solid cadetblue;
+    animation: lod 2s linear infinite;
+    overflow: hidden;
+  }
+  @keyframes lod {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+
+
+
+/* sidebar styling */
+
+
+.sidebar{
+    width: 434px;
+    font-family: 'Crimson Text', serif;
+    height: 112vh;
+}
+
+.sidebar h1{
+    color: #600f69;
+    font-weight: bolder;
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: crimson;
+}
+
+
+
+
+/* home styling */
+
+
+.main{
+    width: 80vw;
+}
+
+.container{
+    display: flex;
+
+}
+
+.infocontainer{
+    height: 70vh;
+    width: 58vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 65px;
+    
+}
+.name{
+    color: rgb(63, 40, 40);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about{
+    font-size: 35px;
+}
+
+.moreabout{
+    color: rgb(85, 73, 73);
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.devPic img{
+    width: 58vh;
+}
+
+
+
+
+/* buttons styling */
+
+
+.buttons{
+    margin-top: 34px;
+}
+
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.btn{
+    padding: 9px 12px;
+    border-radius: 25px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+
+
+/* contact me styling */
+
+
+.contactform{
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contactform h1{
+    color: forestgreen;
+    padding: 40px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.contactform form div{
+    padding: 10px 0;
+}
+
+.contactform form div input{
+    width: 450px;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 3px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 25px;
+    margin: 3px 0;
+}
+
+#emailHelp{
+    font-size: 10px;
+    color:brown;
+    margin: 0 7px;
+}
+
+
+
+
+/* blog styling */
+
+
+.blogitem{
+    margin: 25px;
+    padding: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogcontainer h1{
+    color: cadetblue;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 20px;
+}
+
+.blogitem h2{
+    margin: 3px;
+    padding: 5px;
+}
+
+.blogitem p{
+    color: forestgreen;
+    padding: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+/* intro styling */
+
+
+.introInfo p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0 4px;
+}
+
+.introInfo h1{
+    font-family: 'Fira Sans', sans-serif;
+    color: cadetblue;
+    font-size: 35px;
+    padding: -10px;
+    margin: 0 3px;
+}
+
+.introInfo h2{
+    font-family: 'Fira Sans', sans-serif;
+    color: cadetblue;
+    font-size: 35px;
+    padding: -10px;
+    margin: 0 3px;
+}
+
+.introInfo h3{
+    font-family: 'Fira Sans', sans-serif;
+    color: cadetblue;
+    font-size: 35px;
+    padding: -10px;
+    margin: 0 3px;
+}
+
+.introInfo h4{
+    font-family: 'Fira Sans', sans-serif;
+    color: cadetblue;
+    font-size: 35px;
+    padding: -10px;
+    margin: 0 3px;
+}
+
+.introInfo{
+    margin-top: -95px;
+}
+
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
